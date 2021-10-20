@@ -3,7 +3,7 @@
 from adafruit_hid.keycode import Keycode # REQUIRED if using Keycode.* values
 
 app = {                      # REQUIRED dict, must be named 'app'
-    'name' : 'Mac Zoom', # Application name
+    'name' : 'ZOOM', # Application name
     'macros' : [             # List of button macros...
         # COLOR    LABEL    KEY SEQUENCE
         # 1st row ----------
@@ -21,7 +21,7 @@ app = {                      # REQUIRED dict, must be named 'app'
         # 4th row ----------
         (0x202000, 'PTT', [Keycode.SPACEBAR]),
         (0x000000, '', [Keycode.OPTION, Keycode.SHIFT, Keycode.COMMAND, 'D' ]),
-        (0x004000, 'Mute', [Keycode.COMMAND, Keycode.SHIFT, 'A']),
+        (0x202000, 'Mute', [Keycode.COMMAND, Keycode.SHIFT, 'A']),
         # Encoder button ---
         (0x000000, '', [Keycode.COMMAND, 'w']) # Close window/tab
     ]
